@@ -1,11 +1,9 @@
 import {
   BiLogoCss3,
-  BiLogoFirebase,
   BiLogoMongodb,
   BiLogoReact,
   BiLogoTailwindCss,
   BiLogoJavascript,
-  BiLogoHtml5,
 } from "react-icons/bi";
 import { SiExpress } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
