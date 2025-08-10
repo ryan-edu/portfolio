@@ -1,0 +1,20 @@
+{
+  "short_name": "Ibrahim Portfolio",
+  "name": "Muhammad Ibrahim - MERN Stack Developer Portfolio",
+  "icons": [
+    {
+      "src": "faviconn.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "faviconnn.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#080831",
+  "background_color": "#080831"
+}
