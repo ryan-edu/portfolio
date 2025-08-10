@@ -53,15 +53,6 @@ It features a clean, modern design with smooth animations and a fully functional
 - Node.js (v14 or higher)
 - npm or yarn package manager
 
-### Installation
-
-1. **Clone the repository**
-
-   ```bash
-   git clone https://github.com/ryan-edu/portfolio.git
-   cd portfolio
-   ```
-
 2. **Install dependencies**
 
    ```bash
