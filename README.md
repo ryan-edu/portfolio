@@ -58,7 +58,7 @@ It features a clean, modern design with smooth animations and a fully functional
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/devIbrahim07/portfolio.git
+   git clone https://github.com/ryan-edu/portfolio.git
    cd portfolio
    ```
 
