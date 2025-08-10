@@ -1,5 +1,6 @@
 const ProfileData = {
-  img: require("../assets/Images/oo.png"),
+  img: require("../assets/Images/optimized/oo.webp"),
+  imgFallback: require("../assets/Images/optimized/oo.png"),
   logo: "</>",
   name: "Muhammad Ibrahim",
   professions: [

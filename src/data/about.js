@@ -1,5 +1,6 @@
 const AboutData = {
-  image: require("../assets/Images/about.png"),
+  image: require("../assets/Images/optimized/about.webp"),
+  imageFallback: require("../assets/Images/optimized/about.png"),
   description: [
     "Passionate MERN Stack Developer with hands-on experience in building full-stack web applications using MongoDB, Express.js, ReactJS, and Node.js.",
     "Skilled in developing responsive front-end interfaces with React and Tailwind CSS, and building robust, scalable backend APIs with Node and Express.",

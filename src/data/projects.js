@@ -12,7 +12,8 @@ const ProjectsData = [
   {
     id: "1",
     name: "ECAT Exam Preparation WebApp",
-    image: "./ecat-app.png",
+    image: "./optimized/ecat-app.webp",
+    imageFallback: "./optimized/ecat-app.png",
     icons: [BiLogoReact, BiLogoTailwindCss, FaNodeJs, SiExpress, BiLogoMongodb],
     description:
       "Final Year Project - An exam preparation site to help students practice for ECAT with quiz system and study resources.",
@@ -22,7 +23,8 @@ const ProjectsData = [
   {
     id: "2",
     name: "London Nikkah Service",
-    image: "./london.png",
+    image: "./optimized/london.webp",
+    imageFallback: "./optimized/london.PNG",
     icons: [BiLogoReact, BiLogoTailwindCss, BiLogoJavascript, BiLogoCss3],
     description:
       "A professional Islamic wedding service website offering Nikkah ceremonies in London with personalized speeches and counseling services.",
@@ -32,7 +34,8 @@ const ProjectsData = [
   {
     id: "3",
     name: "Neasden Islamic Centre",
-    image: "./jamia.png",
+    image: "./optimized/jamia.webp",
+    imageFallback: "./optimized/jamia.PNG",
     icons: [BiLogoReact, BiLogoTailwindCss, BiLogoMongodb, SiExpress],
     description:
       "A purpose-built Islamic educational and cultural centre website for Jamia Al-Hafsah, serving London's Muslim community with donations and events.",

@@ -31,11 +31,17 @@ const Projects = () => {
               key={project.id}
               className="group relative flex flex-col flex-wrap h-80 w-[95%] mx-auto shadow-md md:shadow-lg rounded-xl "
             >
-              <img
-                src={project.image}
-                alt={project.name}
-                className="h-80 rounded-xl"
-              />
+              <picture>
+                <source srcSet={project.image} type="image/webp" />
+                <img
+                  src={project.imageFallback || project.image}
+                  alt={project.name}
+                  className="h-80 rounded-xl"
+                  loading="lazy"
+                  width="400"
+                  height="320"
+                />
+              </picture>
               <div className="absolute flex flex-col justify-center items-center bottom-0 left-0 right-0 h-0 overflow-hidden group-hover:h-full transition-[height_0.5s] duration-500 bg-darkblue rounded-xl">
                 <h3 className="text-2xl font-medium text-white my-2">
                   {project.name}

@@ -27,11 +27,17 @@ const About = () => {
             data-aos-once="false"
             className="lg:max-w-lg sm:w-2/3 lg:w-1/2 w-full mb-10 md:mb-0"
           >
-            <img
-              className="object-cover object-center pointer-events-none rounded backdrop-contrast-200 backdrop-brightness-200"
-              alt="hero"
-              src={AboutData.image}
-            />
+            <picture>
+              <source srcSet={AboutData.image} type="image/webp" />
+              <img
+                className="object-cover object-center pointer-events-none rounded backdrop-contrast-200 backdrop-brightness-200"
+                alt="hero"
+                src={AboutData.imageFallback || AboutData.image}
+                loading="lazy"
+                width="500"
+                height="400"
+              />
+            </picture>
           </div>
           <div className="lg:w-1/2 justify-center lg:p-5 xl:p-7 md:p-5 flex flex-col items-center text-justify">
             {AboutData.description?.map((item, index) => (

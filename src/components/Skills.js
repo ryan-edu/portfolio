@@ -36,11 +36,17 @@ const Skills = () => {
                 key={index}
                 className="flex flex-col w-20 h-20 items-center justify-center md:w-24 md:h-24 lg:m-3 xl:m-5 mx-auto"
               >
-                <img
-                  src={skill.image}
-                  alt={skill.name}
-                  className="m-2 object-cover w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 transition duration-700 hover:scale-110"
-                />
+                <picture>
+                  <source srcSet={skill.image} type="image/webp" />
+                  <img
+                    src={skill.fallback || skill.image}
+                    alt={skill.name}
+                    className="m-2 object-cover w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 transition duration-700 hover:scale-110"
+                    loading="lazy"
+                    width="64"
+                    height="64"
+                  />
+                </picture>
                 <p className="font-medium">{skill.name}</p>
               </div>
             );

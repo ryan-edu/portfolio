@@ -18,11 +18,17 @@ const Profile = () => {
           data-aos-once="false"
           className="w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-80 lg:h-80 xl:w-96 xl:h-96 lg:mr-10 xl:mr-20 lg:p-5"
         >
-          <img
-            className="object-cover object-center w-full h-full border-4 border-white pointer-events-none rounded-full shadow-xl"
-            alt={ProfileData.name}
-            src={ProfileData.img}
-          />
+          <picture>
+            <source srcSet={ProfileData.img} type="image/webp" />
+            <img
+              className="object-cover object-center w-full h-full border-4 border-white pointer-events-none rounded-full shadow-xl"
+              alt={ProfileData.name}
+              src={ProfileData.imgFallback || ProfileData.img}
+              loading="eager"
+              width="384"
+              height="384"
+            />
+          </picture>
         </div>
         <div className="lg:flex-grow lg:pr-4 lg:mr-14 flex flex-col md:mb-0 items-center text-center max-w-2xl">
           <SocialHandles />
